@@ -1,20 +1,20 @@
 {
-    "name": "mills/google-places",
+    "name": "vyconsulting-group/google-places",
     "description": "PHP wrapper Google Places API",
     "keywords": ["places","geolocation","api","googleplaces","locate"],
-    "homepage": "https://github.com/anthony-mills/google-places",
+    "homepage": "https://github.com/ChafikHadjAbdouRazack/google-places",
     "license": "GPL-2.0-or-later",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/anthony-mills/google-places"
+            "url": "https://github.com/ChafikHadjAbdouRazack/google-places"
         }
     ],    
     "authors": [
         {
-            "name": "Anthony Mills",
-            "email": "me@anthony-mills.com",
-            "homepage": "http://www.anthony-mills.com",
+            "name": "Vyconsulting Group",
+            "email": "contact@vyconsulting-group.com",
+            "homepage": "https://vyconsulting-group.com",
             "role": "Developer"
         }
     ],
@@ -22,6 +22,6 @@
         "php": ">=5.3.0"
     },
     "autoload": {
-        "classmap": ["src/mills/google-places"]
+        "classmap": ["src/vyconsulting-group/google-places"]
     }
 }

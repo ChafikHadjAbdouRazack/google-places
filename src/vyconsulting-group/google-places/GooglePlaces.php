@@ -41,7 +41,7 @@ class GooglePlaces
      * @param       $apiKey - the API Key to use
      * @param array $proxy
      */
-    public function __construct($apiKey, $proxy = [])
+    public function __construct($apiKey, $proxy = array())
     {
         $this->_apiKey = $apiKey;
         $this->_proxy = $proxy;

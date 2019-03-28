@@ -1,10 +1,10 @@
 <?php
-namespace Mills\GooglePlaces;
+namespace VyconsultingGroup\GooglePlaces;
 
 use Kdyby\Curl\CurlSender;
 use Kdyby\Curl\Request;
 
-class googlePlaces
+class GooglePlaces
 {
 
     const OK_STATUS = 'OK';
@@ -24,7 +24,7 @@ class googlePlaces
     protected $_radius = 50000;     // Required if using nearbysearch or radarsearch (50,000 meters max)
     protected $_sensor = 'false';   // Required simply True or False, is the provided $_location coming from GPS?
 
-    protected $_proxy = [];        // Optional – fields "host", "port", "username", "password"
+    protected $_proxy = array();        // Optional – fields "host", "port", "username", "password"
     protected $_types = '';         // Optional - Separate type with pipe symbol http://code.google.com/apis/maps/documentation/places/supported_types.html
     protected $_name;               // Optional
     protected $_keyword;            // Optional - "A term to be matched against all content that Google has indexed for this Place, including but not limited to name, type, and address, as well as customer reviews and other third-party content."
@@ -32,7 +32,7 @@ class googlePlaces
     protected $_placeId;
     protected $_accuracy;
     protected $_pageToken;
-    protected $_curloptSslVerifypeer = true; // option CURLOPT_SSL_VERIFYPEER with true value working not always
+    protected $_curloptSslVerifypeer = false; // option CURLOPT_SSL_VERIFYPEER with true value working not always
 	protected $_curlReferer;
 
     /**

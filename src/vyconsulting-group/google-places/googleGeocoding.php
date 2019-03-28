@@ -1,7 +1,7 @@
 <?php
-namespace Mills\GooglePlaces;
+namespace VyconsultingGroup\GooglePlaces;
 
-class googleGeocoding {
+class GoogleGeocoding {
 
     const OK_STATUS = 'OK';
 
@@ -30,7 +30,7 @@ class googleGeocoding {
     protected $_language = 'en';    // The language in which to return results. See the list of supported domain languages. Note that we often update supported languages so this list may not be exhaustive. If language is not supplied, the geocoder will attempt to use the native language of the domain from which the request is sent wherever possible.
     protected $_region;             // The region code, specified as a ccTLD ("top-level domain") two-character value. This parameter will only influence, not fully restrict, results from the geocoder. (For more information see Region Biasing below.)
 
-    protected $_curloptSslVerifypeer = true; // option CURLOPT_SSL_VERIFYPEER with true value working not always
+    protected $_curloptSslVerifypeer = false; // option CURLOPT_SSL_VERIFYPEER with true value working not always
 	protected $_curlReferer;
 
     /**
@@ -53,7 +53,7 @@ class googleGeocoding {
 
         $urlParameters = $this->_formatParametersForURL();
 
-        $URLToCall = $this->_apiUrl . '/' . $this->_outputType . '?'. $urlParameters;
+        $URLToCall = $this->_apiUrl . '/' . $this->_outputType . '?'. $urlParameters. '&key=' . $this->_apiKey;
 
         $result = json_decode($this->_curlCall($URLToCall), true);
 

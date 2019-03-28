@@ -5,10 +5,10 @@ Based on anthony-mills/google-places package.
 
 ```php
 <?php
-require_once('googlePlaces.php');
+require_once('GooglePlaces.php');
 
 $apiKey       = 'Your Google Places API Key';
-$googlePlaces = new googlePlaces($apiKey);
+$googlePlaces = new GooglePlaces($apiKey);
 
 // Set the longitude and the latitude of the location you want to search near for places
 $latitude   = '-33.8804166';

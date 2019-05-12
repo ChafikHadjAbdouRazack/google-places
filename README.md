@@ -1,6 +1,6 @@
 PHP wrapper for using the Google Places API.
 Based on the GPLV2 class created by [André Nosalsky](http://andrenosalsky.com/blog/2011/google-places-api-php-class/).
-Based on anthony-mills/google-places package.
+
 ## INSTALLATION ##
 
 composer require vyconsulting-group/google-places
